@@ -179,13 +179,13 @@ alias gco="git checkout"
 
 # More Git
 
-- rebase
+- rebase (different from merge)
 
-- squash
+- squash (using rebase -i)
 
-- git reflog
+- git reflog (recover from mistakes)
 
-- git cherry-pick
+- git cherry-pick 
 
 
 ---
@@ -199,8 +199,6 @@ alias gco="git checkout"
 - upstream
 
 - fetch, pull & push
-
-- issues
 
 - pull requests
 
