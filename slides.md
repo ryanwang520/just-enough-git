@@ -23,7 +23,7 @@ drawings:
 css: unocss
 ---
 
-# Just Engouh Git
+# Just Enough Git
 
 A quick tour of Git.
 
@@ -49,7 +49,6 @@ A quick tour of Git.
     * HEAD(moves along)
 
 
-- `.git` folder
 
 ---
 
@@ -62,7 +61,13 @@ A quick tour of Git.
 
 # What does git do
 
-- git move file_a file_b
+- git move file_a file_b 
+
+<v-click>
+
+Make a clean diff
+
+</v-click>
 
 <v-click>
 
@@ -70,7 +75,7 @@ A quick tour of Git.
 
 - git rm
 
-- git rm --cached (when to use?)
+- git rm --cached
 
 </v-click>
 
@@ -96,6 +101,9 @@ A quick tour of Git.
 - git restore --staged
 
 - git reset 
+   - --mixed(default)
+   - --soft
+   - --hard
 
 - git reset HEAD --hard
 
@@ -194,7 +202,7 @@ alias gco="git checkout"
 
 - issues
 
-- pull requets
+- pull requests
 
 - squash
 
@@ -209,6 +217,7 @@ alias gco="git checkout"
 
 fork -> clone -> add remote -> fetch -> rebase -> push -> pull request
 
+<v-click>
 
 ### Setup a fork
 
@@ -217,8 +226,11 @@ fork -> clone -> add remote -> fetch -> rebase -> push -> pull request
 gh repo fork <repo> # do everything for you
 ```
 
+</v-click>
 
 <br>
+
+<v-click>
 
 ## Merge to develop branch for testing
 
@@ -255,12 +267,15 @@ dev:
 </div>
 </div>
 
+</v-click>
+
+
 ---
 
 # Co-work on Other's Branch
 
 ```bash
-git remote add jun git@github.com:jun/cloudservice.git
+git remote add jun git@github.com:XiaoJunMi/cloudservice.git
 git fetch jun
 git checkout -b branch_from_jun # auto set tracking branch
 git push # never -f to other's branch
