@@ -23,24 +23,26 @@ drawings:
 css: unocss
 ---
 
-# Just engouh Git
+# Just Engouh Git
 
 A quick tour of Git.
 
 ---
 
-# Git fundamentals
+# Git Fundamentals
 
 
 - Working Area, Staging Area, Repository
 
-   * Working Area (Untracked files)
-   * Staging Area (Going to be committed)
-   * Repo (All commits)
+   * Working Area (untracked files)
+   * Staging Area (going to be committed)
+   * Repo (all commits)
 
-- Commits(CODE SNAPSHOT)
+- Commits(code snapshot)
 
-- References(POINTERS TO COMMITS)
+   Mental Model(key value store)
+
+- References(pointers to commits)
 
     * branches
     * tags(fixed pointer)
@@ -60,19 +62,24 @@ A quick tour of Git.
 
 # What does git do
 
-- git move 
+- git move file_a file_b
+
+<v-click>
+
+## What's the difference?
 
 - git rm
 
-- git rm --cached
+- git rm --cached (when to use?)
 
+</v-click>
 
 
 ---
 
 # Commit
 
-- git commit --amend
+- git commit --amend (new commit)
 
 - git commit -a
 
@@ -94,16 +101,17 @@ A quick tour of Git.
 
 - git revert
 
-- git checkout
 
 ---
 
-# Stash
+# Stash (The one I love the most)
 
 
-- git stash save  "doning feature xxx"
+- git stash
 
 - git stash --include-untracked
+
+- git stash save  "doning feature xxx"
 
 - git stash apply
 
@@ -116,19 +124,17 @@ A quick tour of Git.
 
 # Merge Code
 
-- merge code
 
-- fast forward
+- Fast forward
 
-- merge commit
+- Merge commit
 
-- resolve confilict
+- Resolve confilict
 
 
 ---
 
-# Alias (just bash alias)
-
+# Useful Alias (just bash alias)
 
 
 ```bash
@@ -154,13 +160,16 @@ alias gco="git checkout"
 
 - gh
 
-- rg( git grep)
+  * gh pr create -w
+  * gh repo fork
+
+- rg( git grep -n)
 
 - git bisect
 
 ---
 
-# Advanced Git
+# More Git
 
 - rebase
 
@@ -200,10 +209,16 @@ alias gco="git checkout"
 
 fork -> clone -> add remote -> fetch -> rebase -> push -> pull request
 
-```
-git remove add upstream
+
+### Setup a fork
+
+
+```bash
+gh repo fork <repo> # do everything for you
 ```
 
+
+<br>
 
 ## Merge to develop branch for testing
 
@@ -239,3 +254,14 @@ dev:
 ```
 </div>
 </div>
+
+---
+
+# Co-work on Other's Branch
+
+```bash
+git remote add jun git@github.com:jun/cloudservice.git
+git fetch jun
+git checkout -b branch_from_jun # auto set tracking branch
+git push # never -f to other's branch
+```
