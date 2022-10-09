@@ -59,7 +59,7 @@ A quick tour of Git.
 ---
 
 
-# What does git do
+# What does git do under the hood?
 
 - git move file_a file_b 
 
@@ -75,7 +75,7 @@ Make a clean diff
 
 - git rm
 
-- git rm --cached
+- git rm --cached (keep file, when to use?)
 
 </v-click>
 
@@ -88,7 +88,6 @@ Make a clean diff
 
 - git commit -a
 
-- git commit -a --amend
 
 
 ---
@@ -100,14 +99,14 @@ Make a clean diff
 
 - git restore --staged
 
-- git reset 
+- git reset (move HEAD) 
    - --mixed(default)
    - --soft
    - --hard
 
 - git reset HEAD --hard
 
-- git revert
+- git revert (rollback)
 
 
 ---
@@ -137,7 +136,7 @@ Make a clean diff
 
 - Merge commit
 
-- Resolve conflict
+- Resolve conflict(enjoy the process)
 
 
 ---
@@ -276,3 +275,7 @@ git fetch jun
 git checkout -b branch_from_jun # auto set tracking branch
 git push # never -f to other's branch
 ```
+
+---
+
+# Questions?
