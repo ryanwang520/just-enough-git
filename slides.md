@@ -44,8 +44,8 @@ A quick tour of Git.
 
 - References(pointers to commits)
 
-    * branches
-    * tags(fixed pointer)
+    * Branches
+    * Tags(fixed pointer)
     * HEAD(moves along)
 
 
@@ -203,8 +203,6 @@ alias gco="git checkout"
 - issues
 
 - pull requests
-
-- squash
 
 - [octotree](https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc)
 
