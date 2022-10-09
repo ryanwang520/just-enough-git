@@ -137,7 +137,7 @@ Make a clean diff
 
 - Merge commit
 
-- Resolve confilict
+- Resolve conflict
 
 
 ---
