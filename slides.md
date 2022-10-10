@@ -269,11 +269,21 @@ dev:
 
 # Co-work on Other's Branch
 
+## Setup
+
 ```bash
 git remote add jun git@github.com:XiaoJunMi/cloudservice.git
 git fetch jun
 git checkout -b branch_from_jun # auto set tracking branch
 git push # never -f to other's branch
+```
+
+## Merge to your own branch
+
+```
+git checkout my_feature_branch
+git fetch jun
+git merge jun/branch_from_jun
 ```
 
 ---
